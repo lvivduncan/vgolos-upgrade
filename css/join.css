@@ -1,0 +1,44 @@
+.join{
+    border: 1px solid var(--red);
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+
+.join button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    padding:10px 30px;
+    background:var(--red);
+    color:var(--white);
+    display: inline-block;
+    margin:0 0 10px;
+    font-size:16px;
+}
+
+.join-inputs{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.join input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.join label{
+    cursor:pointer;
+}
+
+.join label svg{
+    width:30px;
+    fill:var(--light-gray);
+}
+
+.join input:checked+label svg{
+    fill:var(--red);
+}

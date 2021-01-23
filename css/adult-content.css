@@ -1,0 +1,89 @@
+
+.adult-content{
+    position: relative;
+}
+
+/* відключено */
+.adult-content.disable{
+    position: static;
+}
+
+.adult-content::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.adult-content.disable::before{
+    position: static;
+    display: none;
+}
+
+.adult-content-notice{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    text-align: center;
+    color:var(--white);
+}
+
+.disable .adult-content-notice{
+    display: none;
+}
+
+.adult-title{
+    font-size:40px;
+    text-transform: uppercase;
+    margin:0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adult-title img{
+    height: 70px;
+    margin-left: 10px;
+}
+
+.adult-content-notice p{
+    margin: 5px 0!important;
+}
+
+.adult-content-notice strong{
+    color:var(--red);
+    font-weight: normal;
+}
+
+.adult-content-notice .eighteen{
+    font-size: 40px;
+    color:var(--red);
+    font-weight: 700;
+    margin:40px 0!important;
+}
+
+.adult-content-notice button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    padding:10px 30px;
+    background:var(--red);
+    color:var(--white);
+    display: inline-block;
+    margin:0 0 10px;
+    font-size:16px;
+}

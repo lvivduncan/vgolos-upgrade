@@ -1,0 +1,128 @@
+.levus-horizontal-scroll {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.levus-horizontal-scroll ul {
+    position: relative;
+    display: grid;
+    margin:0!important;
+    left: -33.333333%;
+    grid-template-columns: repeat(20,33.333333%);
+}
+
+@media (max-width: 996px) {
+    .levus-horizontal-scroll ul {
+        left: -50%;
+        grid-template-columns: repeat(20,50%);
+    }
+}
+
+@media (max-width: 776px) {
+    .levus-horizontal-scroll ul {
+        left: -100%;
+        grid-template-columns: repeat(20,100%);
+    }
+}
+
+
+.to-left {
+    transform: translateX(33.333333%);
+}
+
+.to-right {
+    transform: translateX(-33.333333%);
+}
+
+@media (max-width: 996px) {
+    .to-left {
+        transform: translate(50%);    
+    }
+    .to-right {
+        transform: translate(-50%);
+    }
+}
+
+@media (max-width: 776px) {
+    .to-left {
+        transform: translateX(100%);
+    }
+    .to-right {
+        transform: translateX(-100%);
+    }
+}
+
+.levus-horizontal-scroll li{
+    display: block;
+}
+
+.levus-horizontal-scroll img {
+    width: 100%;
+    display: block;
+}
+
+.levus-horizontal-scroll .left,
+.levus-horizontal-scroll .right {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top:-20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.levus-horizontal-scroll .right {
+    right: 0;
+}
+
+.levus-horizontal-scroll .left {
+    left: 0;
+}
+
+.levus-horizontal-scroll .left::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: var(--gray);
+    top: 14px;
+    left: 6px;
+    transform: rotate(-40deg);
+}
+
+.levus-horizontal-scroll .left::after{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 6px;
+    width: 15px;
+    height: 2px;
+    background: var(--gray);
+    transform: rotate(40deg);
+}
+
+
+.levus-horizontal-scroll .right::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: var(--gray);
+    top: 22px;
+    right: 6px;
+    transform: rotate(-40deg);
+}
+
+.levus-horizontal-scroll .right::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 6px;
+    width: 15px;
+    height: 2px;
+    background: var(--gray);
+    transform: rotate(40deg);
+}
