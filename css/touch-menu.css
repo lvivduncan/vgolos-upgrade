@@ -12,6 +12,7 @@
     z-index: 35;
 
     color:var(--white);
+    font-size:13px;
 }
 
 #touch-menu.show{
@@ -27,7 +28,7 @@
 #touch-menu-close{
     position: absolute;
     top:12px;
-    right:48px;
+    right:42px;
     z-index:40;
 }
 
@@ -38,7 +39,7 @@
 
 #touch-menu-close::after{
     height: 2px;
-    width: 30px;
+    width: 24px;
     background: var(--white);
     position: absolute;
     top: 15px;
@@ -48,7 +49,7 @@
 
 #touch-menu-close::before{
     height: 2px;
-    width: 30px;
+    width: 24px;
     background: var(--white);
     position: absolute;
     top: 15px;
