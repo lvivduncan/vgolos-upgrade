@@ -1,7 +1,29 @@
+.gallery{
+    padding: 0 20px;
+}
+
 .levus-horizontal-scroll {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
+}
+
+.levus-horizontal-scroll::before,
+.levus-horizontal-scroll::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0;
+    width: 20px;
+    height: 100%;
+}
+
+.levus-horizontal-scroll::before{
+    right:0;
+}
+
+.levus-horizontal-scroll::after{
+    left:0;
 }
 
 .levus-horizontal-scroll ul {
@@ -75,11 +97,11 @@
 }
 
 .levus-horizontal-scroll .right {
-    right: 0;
+    right: -20px;
 }
 
 .levus-horizontal-scroll .left {
-    left: 0;
+    left: -20px;
 }
 
 .levus-horizontal-scroll .left::before{
