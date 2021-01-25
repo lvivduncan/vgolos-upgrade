@@ -57,6 +57,20 @@
 }
 
 
+/* пошук */
+#touch-menu-search{
+    position: absolute;   
+    top:16px;
+    right:62px;
+    z-index:40; 
+}
+
+#touch-menu-search svg{
+    fill:var(--white);
+    width:22px;
+}
+
+
 /* заголовки */
 #touch-menu p{
     text-transform: uppercase;
@@ -216,12 +230,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 10px;
 }
 
 #touch-bottom svg{
     fill:var(--white);
-    width:22px;
-    margin: 0 3px;
+    height:22px;
 }
 
 
