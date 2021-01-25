@@ -91,7 +91,7 @@
 
 #touch-left a{
     display:block;
-    padding:10px 5px;
+    padding: 10px 5px 10px 0;
     color:var(--white);
 }
 
@@ -128,7 +128,7 @@
     display: block;
     text-decoration: none;
     color:var(--white);
-    padding: 10px 5px;
+    padding: 10px 5px 10px 0;
 }
 
 .levus-aside-menu li li a{
