@@ -1,0 +1,61 @@
+
+/* блок, який підвантажується */
+.load{
+    margin: 30px 0;
+    background-size:cover!important;
+    height:300px;
+    position: relative;
+}
+
+.load .header{
+    position: absolute;
+    bottom: 20px; 
+    width: 100%;
+    background: rgba(0,0,0,.25);
+    color:var(--white);
+    padding: 10px 10px 10px 100px;
+}
+
+.load .header p{
+    color: var(--light);
+    font-size: 12px;
+    margin: 0 0 5px!important;
+}
+
+.load .header h4,
+.load .header h4 a{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none!important;
+    color:var(--white)!important;
+    margin:0!important;
+}
+
+.load .data{
+    position: absolute;
+    top:30px;
+    left:0;
+    font-size: 12px;
+}
+
+.load .data .date{
+    white-space: nowrap;
+    background: var(--white);
+    display: inline-block;
+    padding:5px 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.load .data .author{
+    white-space: nowrap;
+    background: var(--red);
+    color: var(--white);
+    display: inline-block;
+    padding:5px 15px;
+    position: absolute;
+    top:25px;
+    left:15px;
+    z-index: 2;
+}
