@@ -20,8 +20,8 @@
 .join-inputs{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 0 20px;
 }
 
 .join input{
@@ -35,7 +35,7 @@
 }
 
 .join label svg{
-    width:30px;
+    height:22px;
     fill:var(--light-gray);
 }
 
