@@ -1,49 +1,13 @@
 
 .adult-content{
-    position: relative;
-}
-
-/* відключено */
-.adult-content.disable{
-    position: static;
-}
-
-.adult-content::before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.85);
-}
-
-.adult-content.disable::before{
-    position: static;
-    display: none;
-}
-
-.adult-content-notice{
-    position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index: 3;
-
+    padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-
-    text-align: center;
+    background-color: rgba(0,0,0,0.85);
     color:var(--white);
-}
-
-.disable .adult-content-notice{
-    display: none;
+    text-align: center;
 }
 
 .adult-title{
@@ -60,23 +24,23 @@
     margin-left: 10px;
 }
 
-.adult-content-notice p{
+.adult-content p{
     margin: 5px 0!important;
 }
 
-.adult-content-notice strong{
+.adult-content strong{
     color:var(--red);
     font-weight: normal;
 }
 
-.adult-content-notice .eighteen{
+.adult-content .eighteen{
     font-size: 40px;
     color:var(--red);
     font-weight: 700;
     margin:40px 0!important;
 }
 
-.adult-content-notice button{
+.adult-content button{
     cursor:pointer;
     border:none;
     outline:none;
