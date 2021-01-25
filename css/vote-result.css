@@ -1,7 +1,7 @@
 .poll{
-    background:var(--footer-background);
+    background: rgba(230, 235, 240, .2);
     padding: 10px 10px 10px 30px;
-    margin: 15px 0;
+    margin: 10px 0;
     position: relative;
     display: flex;
     align-items: center;
